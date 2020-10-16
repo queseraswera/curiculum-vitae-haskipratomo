@@ -1,0 +1,47 @@
+.Style {
+  font: 16px/20px tahoma;
+}
+
+.container {
+  width: 900px;
+  height: 900px;
+  margin: auto;
+  background-color: #f5fffa;
+  border-style: solid;
+  margin-top: 20px;
+}
+
+.container h2 {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: 2px solid #a9a9a9;
+}
+
+.me h3 {
+  padding-left: 250px;
+  font-size: 60px;
+  margin: 20px;
+}
+
+.me {
+  background-image: url(./images/komuk.png);
+  background-size: 190px;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container p {
+  padding-left: 100px;
+}
+
+.col-lg {
+  font: 14px/20px tahoma;
+}
+
+.col-lg h3 {
+  padding-left: 80px;
+  margin: 20px;
+}
