@@ -1,4 +1,4 @@
-.Style {
+.style {
   font: 16px/20px tahoma;
 }
 
@@ -17,6 +17,16 @@
   margin-left: 100px;
   margin-right: 100px;
   border-bottom: 2px solid #a9a9a9;
+}
+
+.container h4 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container button {
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
 .me h3 {
@@ -44,4 +54,8 @@
 .col-lg h3 {
   padding-left: 80px;
   margin: 20px;
+}
+.col-lg button {
+  margin-top: 20px;
+  margin-left: 100px;
 }

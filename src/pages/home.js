@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { UserContext } from '../utility/customHook';
 
 function Home() {
+  const { value, setValue } = useContext(UserContext);
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -15,6 +18,10 @@ function Home() {
               <h3>HASKI</h3>
               <h3>PRATOMO</h3>
             </div>
+            <h4>- {value} -</h4>
+            <button onClick={() => setValue('Front End Developer')}>
+              Tampilkan
+            </button>
             <h2>MINAT BAKAT</h2>
             <div className="col-lg">
               <p> - Social Media</p>

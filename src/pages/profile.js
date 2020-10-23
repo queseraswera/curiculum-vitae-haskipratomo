@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function Profile() {
+  const [office, setOffice] = useState(0);
+  const [program, setProgram] = useState(0);
+  const [design, setDesign] = useState(0);
+  const [website, setWebsite] = useState(0);
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -34,15 +39,31 @@ function Profile() {
             <h2>KEMAMPUAN</h2>
             <div className="col-lg">
               <p> - Microsoft Office</p>
+              <p> Kemampuan saya {office}%</p>
             </div>
             <div className="col-lg">
               <p> - Programming</p>
+              <p> Kemampuan saya {program}%</p>
             </div>
             <div className="col-lg">
               <p> - Design</p>
+              <p> Kemampuan saya {design}%</p>
             </div>
             <div className="col-lg">
               <p> - Website</p>
+              <p> Kemampuan saya {website}%</p>
+            </div>
+            <div className="col-lg">
+              <button
+                onClick={() => {
+                  setOffice(60);
+                  setProgram(50);
+                  setDesign(70);
+                  setWebsite(50);
+                }}
+              >
+                Click Me!
+              </button>
             </div>
           </div>
         </body>
